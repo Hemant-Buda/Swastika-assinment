@@ -222,7 +222,7 @@ export default function DramaPuppetryPage() {
                       <p className="text-gray-700 leading-relaxed">
                         Children wear hats and capes, pretending to be animals,
                         workers, or family members. Educator narrates and joins
-                        in play. 📘 Develops symbolic thought and social play
+                        in play. Develops symbolic thought and social play
                         (Smilansky, 1990).
                       </p>
                     </div>
