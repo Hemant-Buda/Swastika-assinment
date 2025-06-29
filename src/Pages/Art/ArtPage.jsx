@@ -94,7 +94,6 @@ export default function ArtPage() {
                 </p>
               </CardContent>
             </Card>
-
             <Card className="overflow-hidden border-0 shadow-xl bg-gradient-to-br from-white to-orange-50">
               <CardHeader className="bg-gradient-to-r from-orange-600 to-pink-600 text-white">
                 <CardTitle className="text-2xl flex items-center">
@@ -120,7 +119,6 @@ export default function ArtPage() {
                 </p>
               </CardContent>
             </Card>
-
             <Card className="overflow-hidden border-0 shadow-xl bg-gradient-to-br from-white to-pink-50">
               <CardHeader className="bg-gradient-to-r from-pink-600 to-orange-600 text-white">
                 <CardTitle className="text-2xl flex items-center">
@@ -162,7 +160,6 @@ export default function ArtPage() {
                 </div>
               </CardContent>
             </Card>
-
             <Card className="overflow-hidden border-0 shadow-xl bg-gradient-to-br from-white to-orange-50">
               <CardHeader className="bg-gradient-to-r from-orange-600 to-pink-600 text-white">
                 <CardTitle className="text-2xl flex items-center">
@@ -322,6 +319,61 @@ export default function ArtPage() {
                       </p>
                     </div>
                   </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden border-0 shadow-xl bg-gradient-to-br from-white to-pink-50">
+              <CardHeader className="bg-gradient-to-r from-pink-600 to-orange-600 text-white">
+                <CardTitle className="text-2xl flex items-center">
+                  <Camera className="w-6 h-6 mr-3" />
+                  Digital Evidence & Documentation
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="p-8 space-y-6">
+                <p className="text-gray-700 text-lg">
+                  This section will include video recordings and timelines of
+                  enacted learning experiences, demonstrating practical
+                  application of art activities across different age groups.
+                </p>
+                <div className="grid md:grid-cols-2 gap-6">
+                  {/* Video 1 */}
+                  <Link
+                    to="https://go.screenpal.com/watch/cT1U6unleWs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="bg-gradient-to-br from-pink-50 to-white p-6 rounded-xl shadow-lg border border-pink-100 text-center hover:shadow-2xl transition">
+                      <div className="w-16 h-16 bg-pink-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Camera className="h-8 w-8 text-pink-600" />
+                      </div>
+                      <h4 className="font-bold text-gray-900 mb-2 text-lg">
+                        Video Recording 1
+                      </h4>
+                      <p className="text-gray-600 mb-2">
+                        Collage Activity (2-3 years)
+                      </p>
+                    </div>
+                  </Link>
+
+                  {/* Video 2 */}
+                  <Link
+                    to="https://go.screenpal.com/watch/cT1U6vnleWS"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="bg-gradient-to-br from-orange-50 to-white p-6 rounded-xl shadow-lg border border-orange-100 text-center hover:shadow-2xl transition">
+                      <div className="w-16 h-16 bg-orange-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Camera className="h-8 w-8 text-orange-600" />
+                      </div>
+                      <h4 className="font-bold text-gray-900 mb-2 text-lg">
+                        Video Recording 2
+                      </h4>
+                      <p className="text-gray-600 mb-2">
+                        Watercolour Emotions Art (3–5 years)
+                      </p>
+                    </div>
+                  </Link>
                 </div>
               </CardContent>
             </Card>

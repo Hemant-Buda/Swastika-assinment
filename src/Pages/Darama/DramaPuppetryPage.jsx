@@ -305,6 +305,103 @@ export default function DramaPuppetryPage() {
                 </div>
               </CardContent>
             </Card>
+            <Card className="overflow-hidden border-0 shadow-xl bg-gradient-to-br from-white to-purple-50">
+              <CardHeader className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
+                <CardTitle className="text-2xl flex items-center">
+                  <FileText className="w-6 h-6 mr-3" />
+                  Digital Evidence & Documentation
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="p-8 space-y-6">
+                <p className="text-gray-700 text-lg">
+                  This section will include video recordings and timelines of
+                  enacted learning experiences, demonstrating practical
+                  application of drama and puppetry activities across different
+                  age groups.
+                </p>
+                <div className="grid md:grid-cols-2 gap-6">
+                  {/* //link */}
+                  <Link
+                    to="https://go.screenpal.com/watch/cT1UXenlfV0 "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="bg-gradient-to-br from-purple-50 to-white p-6 rounded-xl shadow-lg border border-purple-100 text-center hover:shadow-2xl transition">
+                      <div className="w-16 h-16 bg-purple-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <FileText className="h-8 w-8 text-purple-600" />
+                      </div>
+                      <h4 className="font-bold text-gray-900 mb-2 text-lg">
+                        Video Recording 1
+                      </h4>
+                      <p className="text-gray-600 mb-2">
+                        Finger puppet song time ( 2-3)
+                      </p>
+                 
+                    </div>
+                  </Link>
+                  {/* //link */}
+                  <Link
+                    to="https://go.screenpal.com/watch/cT1UXfnlfVt
+
+"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="bg-gradient-to-br from-indigo-50 to-white p-6 rounded-xl shadow-lg border border-indigo-100  text-center hover:shadow-2xl transition">
+                      <div className="w-16 h-16 bg-indigo-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <FileText className="h-8 w-8 text-indigo-600" />
+                      </div>
+                      <h4 className="font-bold text-gray-900 mb-2 text-lg">
+                        Video Recording 2
+                      </h4>
+                      <p className="text-gray-600 mb-2">
+                        Emotion masks drama (3-5 years)
+                      </p>
+              
+                    </div>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden border-0 shadow-xl bg-gradient-to-br from-white to-indigo-50">
+              <CardHeader className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+                <CardTitle className="text-2xl flex items-center">
+                  <Lightbulb className="w-6 h-6 mr-3" />
+                  Critical Reflection
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="p-8 space-y-8">
+                <div className="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl shadow-lg border border-blue-100">
+                  <p className="text-gray-900 leading-9 font-extrabold mb-6">
+                    Performing these creative learning experiences deepened my
+                    understanding of how intentional assistance supports
+                    children’s imaginative growth. In the Art collage activity,
+                    one aspect that went well was how I used descriptive
+                    language (“soft,” “bumpy,” “press gently”), which motivated
+                    sensory exploration and constructed vocabulary. Similarly,
+                    during the Drama emotion masks activity, I effectively
+                    modelled amplified facial expressions and movements, making
+                    it easier for children to become involved and interpret
+                    different feelings. However, one area to improve was
+                    providing more space for child-led ideas. I noticed I
+                    sometimes guided outcomes too directly, which may have
+                    limited children’s individual choices. Additionally, I could
+                    improve the experiences by providing more diverse cues, such
+                    as “Can you show me another way your puppet might feel?” to
+                    invite broader creative responses. If I were to do these
+                    activities again, I would include more varied accessories
+                    and open-ended materials and intentionally pause to observe
+                    children’s own narratives unfold. This aligns with
+                    Vygotsky’s (1978) emphasis on imaginative play as a zone of
+                    proximal development, and Gardner’s (2011) view of
+                    creativity developing through multiple intelligences.
+                    Ultimately, these enactments strengthened the importance of
+                    balancing structure with freedom to truly foster children’s
+                    agency and diverse ways of expressing their creativity.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           <div className="space-y-6">
