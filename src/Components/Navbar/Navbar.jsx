@@ -6,8 +6,14 @@ import {
   Menu,
   X,
   Drama,
-  ArrowLeft,
-  FileText,
+  Music,
+  Languages,
+  Atom,
+  Cpu,
+  Calculator,
+  Landmark,
+  Combine,
+  Construction,
 } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
@@ -15,6 +21,66 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
   const buttonRef = useRef(null);
+
+  // Navigation links data
+  const navLinks = [
+    { path: "/", name: "Home", icon: Home, activeColor: "text-[#0071e3]" },
+    { path: "/art", name: "Art", icon: Palette, activeColor: "text-pink-600" },
+    {
+      path: "/drama-puppetry",
+      name: "Drama & Puppetry",
+      icon: Drama,
+      activeColor: "text-purple-600",
+    },
+    {
+      path: "/movement-music",
+      name: "Movement & Music",
+      icon: Music,
+      activeColor: "text-purple-600",
+    },
+    {
+      path: "/language-literacy",
+      name: "Language & Literacy",
+      icon: Languages,
+      activeColor: "text-purple-600",
+    },
+    {
+      path: "/science",
+      name: "Science",
+      icon: Atom,
+      activeColor: "text-purple-600",
+    },
+    {
+      path: "/engineering",
+      name: "Engineering",
+      icon: Construction,
+      activeColor: "text-purple-600",
+    },
+    {
+      path: "/technologies",
+      name: "Technologies",
+      icon: Cpu,
+      activeColor: "text-purple-600",
+    },
+    {
+      path: "/mathematics-numeracy",
+      name: "Mathematics & Numeracy",
+      icon: Calculator,
+      activeColor: "text-purple-600",
+    },
+    {
+      path: "/humanities-social-sciences",
+      name: "Humanities & Social Science",
+      icon: Landmark,
+      activeColor: "text-purple-600",
+    },
+    {
+      path: "/integrated-curriculum",
+      name: "Integrated Curriculum",
+      icon: Combine,
+      activeColor: "text-purple-600",
+    },
+  ];
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -36,7 +102,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-sm border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <NavLink to="/">
             <div className="flex items-center space-x-2">
@@ -47,48 +113,30 @@ const Navbar = () => {
             </div>
           </NavLink>
 
-          <div className="hidden md:flex space-x-8">
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                `flex items-center space-x-1 transition-colors ${
-                  isActive
-                    ? "text-[#0071e3] font-medium"
-                    : "text-gray-600 hover:text-[#0071e3] font-medium"
-                }`
-              }
-            >
-              <Home className="h-4 w-4" />
-              <span>Home</span>
-            </NavLink>
-            <NavLink
-              to="/art"
-              className={({ isActive }) =>
-                `flex items-center space-x-1 transition-colors ${
-                  isActive
-                    ? "text-pink-600 font-medium"
-                    : "text-gray-600 hover:text-[#0071e3] font-medium"
-                }`
-              }
-            >
-              <Palette className="h-4 w-4" />
-              <span>Art</span>
-            </NavLink>
-            <NavLink
-              to="/drama-puppetry"
-              className={({ isActive }) =>
-                `flex items-center space-x-1 transition-colors ${
-                  isActive
-                    ? "text-purple-600 font-medium"
-                    : "text-gray-600 hover:text-[#0071e3] font-medium"
-                }`
-              }
-            >
-              <Drama className="h-4 w-4" />
-              <span>Drama & Puppetry</span>
-            </NavLink>
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex space-x-4">
+            {navLinks.map((link) => {
+              const Icon = link.icon;
+              return (
+                <NavLink
+                  key={link.path}
+                  to={link.path}
+                  className={({ isActive }) =>
+                    `flex items-center space-x-1 transition-colors px-2 py-1 rounded ${
+                      isActive
+                        ? `${link.activeColor} font-medium`
+                        : "text-gray-600 hover:text-[#0071e3] font-medium"
+                    }`
+                  }
+                >
+                  <Icon className="h-4 w-4" />
+                  <span className="text-sm">{link.name}</span>
+                </NavLink>
+              );
+            })}
           </div>
 
+          {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
             <button
               ref={buttonRef}
@@ -106,6 +154,7 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Mobile Navigation */}
       <div
         ref={menuRef}
         className={`md:hidden ${
@@ -113,45 +162,26 @@ const Navbar = () => {
         } bg-white shadow-md transition-all duration-300 ease-in-out`}
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `flex items-center px-3 py-2 rounded-md text-base font-medium ${
-                isActive
-                  ? "bg-indigo-50 text-indigo-600"
-                  : "text-gray-700 hover:bg-gray-100 hover:text-indigo-600"
-              }`
-            }
-          >
-            <Home className="h-5 w-5 mr-3" />
-            <span>Home</span>
-          </NavLink>
-          <NavLink
-            to="/art"
-            className={({ isActive }) =>
-              `flex items-center px-3 py-2 rounded-md text-base font-medium ${
-                isActive
-                  ? "bg-pink-50 text-pink-600"
-                  : "text-gray-700 hover:bg-gray-100 hover:text-indigo-600"
-              }`
-            }
-          >
-            <Palette className="h-5 w-5 mr-3" />
-            <span>Art</span>
-          </NavLink>
-          <NavLink
-            to="/drama-puppetry"
-            className={({ isActive }) =>
-              `flex items-center px-3 py-2 rounded-md text-base font-medium ${
-                isActive
-                  ? "bg-purple-50 text-purple-600"
-                  : "text-gray-700 hover:bg-gray-100 hover:text-indigo-600"
-              }`
-            }
-          >
-            <Drama className="h-5 w-5 mr-3" />
-            <span>Drama & Puppetry</span>
-          </NavLink>
+          {navLinks.map((link) => {
+            const Icon = link.icon;
+            return (
+              <NavLink
+                key={link.path}
+                to={link.path}
+                className={({ isActive }) =>
+                  `flex items-center px-3 py-2 rounded-md text-base font-medium ${
+                    isActive
+                      ? `bg-indigo-50 ${link.activeColor}`
+                      : "text-gray-700 hover:bg-gray-100 hover:text-indigo-600"
+                  }`
+                }
+                onClick={() => setIsOpen(false)}
+              >
+                <Icon className="h-5 w-5 mr-3" />
+                <span>{link.name}</span>
+              </NavLink>
+            );
+          })}
         </div>
       </div>
     </nav>

@@ -7,6 +7,14 @@ import {
   Star,
   Lightbulb,
   Users,
+  Music,
+  Calculator,
+  Globe,
+  Puzzle,
+  BookOpen,
+  FlaskConical,
+  Construction,
+  Laptop,
 } from "lucide-react";
 import Darama from "../../assets/drama.avif";
 import {
@@ -336,7 +344,6 @@ export default function DramaPuppetryPage() {
                       <p className="text-gray-600 mb-2">
                         Finger puppet song time ( 2-3)
                       </p>
-                 
                     </div>
                   </Link>
                   {/* //link */}
@@ -357,7 +364,6 @@ export default function DramaPuppetryPage() {
                       <p className="text-gray-600 mb-2">
                         Emotion masks drama (3-5 years)
                       </p>
-              
                     </div>
                   </Link>
                 </div>
@@ -412,14 +418,55 @@ export default function DramaPuppetryPage() {
               <CardContent className="p-6 flex flex-col space-y-3">
                 <Link to="/">
                   <Button className="w-full justify-start bg-gradient-to-r from-gray-100 to-gray-200 text-gray-700 hover:from-gray-200 hover:to-gray-300 shadow-sm">
-                    <Home className="h-4 w-4 mr-2" />
-                    Home Page
+                    <Home className="h-4 w-4 mr-2" /> Home Page
                   </Button>
                 </Link>
+
                 <Link to="/art">
                   <Button className="w-full justify-start bg-gradient-to-r from-pink-100 to-pink-200 text-pink-700 hover:from-pink-200 hover:to-pink-300 shadow-sm">
-                    <Palette className="h-4 w-4 mr-2" />
-                    Art Curriculum
+                    <Palette className="h-4 w-4 mr-2" /> Art
+                  </Button>
+                </Link>
+                <Link to="/movement-music">
+                  <Button className="w-full justify-start bg-gradient-to-r from-blue-100 to-blue-200 text-blue-700 hover:from-blue-200 hover:to-blue-300 shadow-sm">
+                    <Music className="h-4 w-4 mr-2" /> Movement & Music
+                  </Button>
+                </Link>
+                <Link to="/language-literacy">
+                  <Button className="w-full justify-start bg-gradient-to-r from-green-100 to-green-200 text-green-700 hover:from-green-200 hover:to-green-300 shadow-sm">
+                    <BookOpen className="h-4 w-4 mr-2" /> Language & Literacy
+                  </Button>
+                </Link>
+                <Link to="/science">
+                  <Button className="w-full justify-start bg-gradient-to-r from-red-100 to-red-200 text-red-700 hover:from-red-200 hover:to-red-300 shadow-sm">
+                    <FlaskConical className="h-4 w-4 mr-2" /> Science
+                  </Button>
+                </Link>
+                <Link to="/engineering">
+                  <Button className="w-full justify-start bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-700 hover:from-yellow-200 hover:to-yellow-300 shadow-sm">
+                    <Construction className="h-4 w-4 mr-2" /> Engineering
+                  </Button>
+                </Link>
+                <Link to="/technologies">
+                  <Button className="w-full justify-start bg-gradient-to-r from-cyan-100 to-cyan-200 text-cyan-700 hover:from-cyan-200 hover:to-cyan-300 shadow-sm">
+                    <Laptop className="h-4 w-4 mr-2" /> Technologies
+                  </Button>
+                </Link>
+                <Link to="/mathematics-numeracy">
+                  <Button className="w-full justify-start bg-gradient-to-r from-indigo-100 to-indigo-200 text-indigo-700 hover:from-indigo-200 hover:to-indigo-300 shadow-sm">
+                    <Calculator className="h-4 w-4 mr-2" /> Mathematics &
+                    Numeracy
+                  </Button>
+                </Link>
+                <Link to="/humanities-social-sciences">
+                  <Button className="w-full justify-start bg-gradient-to-r from-teal-100 to-teal-200 text-teal-700 hover:from-teal-200 hover:to-teal-300 shadow-sm">
+                    <Globe className="h-4 w-4 mr-2" /> Humanities & Social
+                    Sciences
+                  </Button>
+                </Link>
+                <Link to="/integrated-curriculum">
+                  <Button className="w-full justify-start bg-gradient-to-r from-lime-100 to-lime-200 text-lime-700 hover:from-lime-200 hover:to-lime-300 shadow-sm">
+                    <Puzzle className="h-4 w-4 mr-2" /> Integrated Curriculum
                   </Button>
                 </Link>
               </CardContent>

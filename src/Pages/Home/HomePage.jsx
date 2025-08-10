@@ -1,15 +1,28 @@
+import Button from "../../Components/Button/Button";
 import { Link } from "react-router-dom";
 import Home from "../../assets/home.jpg";
 import Art from "../../assets/art1.jpg";
 import Darama from "../../assets/drama.avif";
-import { Palette, Drama, Heart, Star } from "lucide-react";
-import Button from "../../Components/Button/Button";
+import {
+  Palette,
+  Drama,
+  Heart,
+  Star,
+  Music,
+  BookOpen,
+  FlaskConical,
+  Construction,
+  Laptop,
+  Calculator,
+  Globe,
+  Puzzle,
+} from "lucide-react";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
+  CardDescription,
 } from "../../Components/Card/Card";
 
 export default function HomePage() {
@@ -20,13 +33,12 @@ export default function HomePage() {
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-pink-200 rounded-full opacity-20 animate-pulse"></div>
           <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-200 rounded-full opacity-20 animate-pulse delay-1000"></div>
         </div>
-
         <div className="max-w-7xl mx-auto relative">
           <div className="grid lg:grid-cols-2 gap-15 items-center">
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-sm font-medium text-purple-700 mb-6 shadow-sm">
-                <Star className="w-4 h-4 mr-2 text-yellow-500" />
-                Early Childhood Education Excellence
+                <Star className="w-4 h-4 mr-2 text-yellow-500" /> Creative Arts
+                Education Excellence
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 Fostering{" "}
@@ -40,38 +52,17 @@ export default function HomePage() {
                 and learning through art, drama, and puppetry in early childhood
                 settings.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link to="/art">
-                  <Button
-                    size="lg"
-                    className="bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 text-white rounded-full px-8 py-3 text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300"
-                  >
-                    <Palette className="w-5 h-5 mr-2" />
-                    Explore Art Curriculum
-                  </Button>
-                </Link>
-                <Link to="/drama-puppetry">
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white rounded-full px-8 py-3 text-lg font-medium transition-all duration-300 bg-transparent"
-                  >
-                    <Drama className="w-5 h-5 mr-2" />
-                    Drama & Puppetry
-                  </Button>
-                </Link>
-              </div>
             </div>
-
             <div className="relative">
               <div className="relative z-10">
                 <img
                   src={Home}
                   alt="Children engaged in creative activities"
+                  width={600}
+                  height={100}
                   className="rounded-2xl shadow-2xl w-full h-auto object-cover"
                 />
               </div>
-
               <div className="absolute -top-15 -left-20 w-20 h-20 bg-yellow-200 rounded-full flex items-center justify-center shadow-lg animate-bounce">
                 <Palette className="w-10 h-10 text-yellow-600" />
               </div>
@@ -82,7 +73,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto">
           <div className=" items-center">
@@ -109,7 +99,7 @@ export default function HomePage() {
                   opportunities. According to the Early Years Learning Framework
                   (EYLF V2.0), creativity is raised when children feel safe,
                   supported, and motivated to take risks and try new things
-                  (ACECQA, 2022). Creative learning is deeply linked to
+                  (ACECQA, 2022). Creative learning is deatly linked to
                   children’s sense of belonging, being, and becoming. It also
                   helps agency, critical thinking, and innovation skills
                   necessary for life and learning.
@@ -168,7 +158,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -180,13 +169,14 @@ export default function HomePage() {
               development in young learners
             </p>
           </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img
                   src={Art}
                   alt="Art curriculum activities"
+                  width={400}
+                  height={300}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-pink-600/20 to-transparent"></div>
@@ -216,12 +206,13 @@ export default function HomePage() {
                 </Link>
               </CardContent>
             </Card>
-
             <Card className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img
                   src={Darama}
                   alt="Drama and puppetry activities"
+                  width={400}
+                  height={300}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-600/20 to-transparent"></div>
@@ -250,6 +241,297 @@ export default function HomePage() {
                 </Link>
               </CardContent>
             </Card>
+
+            {/* New Cards Start Here */}
+            <Card className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://i.pinimg.com/736x/75/95/8c/75958c4d78ec33db1d109b8fb1f82c78.jpg"
+                  alt="Movement and music activities"
+                  width={400}
+                  height={300}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent"></div>
+              </div>
+              <CardHeader className="text-center pb-4">
+                <div className="mx-auto w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Music className="h-8 w-8 text-blue-600" />
+                </div>
+                <CardTitle className="text-2xl text-gray-900">
+                  Movement & Music
+                </CardTitle>
+                <CardDescription className="text-gray-600">
+                  Rhythmic, sensory, and musical experiences for holistic
+                  development
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-center pt-0">
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Discover how movement and music foster coordination, emotional
+                  expression, and cognitive growth in early childhood.
+                </p>
+                <Link to="/movement-music">
+                  <Button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-full px-6 py-2 font-medium shadow-lg hover:shadow-xl transition-all duration-300">
+                    Movement & Music
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://media.istockphoto.com/id/862689744/photo/learning-to-spell.jpg?s=612x612&w=0&k=20&c=sV30t3m4P8AnSFfO29PsxI_1TmC5mWmg55fwhWJhLdA="
+                  alt="Language and literacy activities"
+                  width={400}
+                  height={300}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-green-600/20 to-transparent"></div>
+              </div>
+              <CardHeader className="text-center pb-4">
+                <div className="mx-auto w-16 h-16 bg-gradient-to-br from-green-100 to-green-200 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <BookOpen className="h-8 w-8 text-green-600" />
+                </div>
+                <CardTitle className="text-2xl text-gray-900">
+                  Language & Literacy
+                </CardTitle>
+                <CardDescription className="text-gray-600">
+                  Communication, expression, and cognitive development through
+                  linguistic experiences
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-center pt-0">
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Explore how language and literacy foster communication,
+                  storytelling, and early reading skills in young learners.
+                </p>
+                <Link to="/language-literacy">
+                  <Button className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white rounded-full px-6 py-2 font-medium shadow-lg hover:shadow-xl transition-all duration-300">
+                    Language & Literacy
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://media.istockphoto.com/id/639407632/photo/excited-school-girls-during-chemistry-experiment.jpg?s=612x612&w=0&k=20&c=-W-vGm-bJ9XnxiCyFIxmLz3Asi0NJEiUjJoPShtBGLo="
+                  alt="Science exploration activities"
+                  width={400}
+                  height={300}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-red-600/20 to-transparent"></div>
+              </div>
+              <CardHeader className="text-center pb-4">
+                <div className="mx-auto w-16 h-16 bg-gradient-to-br from-red-100 to-red-200 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <FlaskConical className="h-8 w-8 text-red-600" />
+                </div>
+                <CardTitle className="text-2xl text-gray-900">
+                  Science Curriculum
+                </CardTitle>
+                <CardDescription className="text-gray-600">
+                  Curiosity, critical thinking, and problem-solving through
+                  scientific exploration
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-center pt-0">
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Discover how science education fosters curiosity, critical
+                  thinking, and observation skills in young children.
+                </p>
+                <Link to="/science">
+                  <Button className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white rounded-full px-6 py-2 font-medium shadow-lg hover:shadow-xl transition-all duration-300">
+                    Science Curriculum
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://media.istockphoto.com/id/1147827393/photo/child-playing-with-colorful-toy-blocks-kids-play.jpg?s=612x612&w=0&k=20&c=Qt425AQFUBSgeZ_y6fnok7SgBD5Onba_QiJy5TNJlkU="
+                  alt="Engineering activities"
+                  width={400}
+                  height={300}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-yellow-600/20 to-transparent"></div>
+              </div>
+              <CardHeader className="text-center pb-4">
+                <div className="mx-auto w-16 h-16 bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Construction className="h-8 w-8 text-yellow-600" />
+                </div>
+                <CardTitle className="text-2xl text-gray-900">
+                  Engineering Curriculum
+                </CardTitle>
+                <CardDescription className="text-gray-600">
+                  Problem-solving, innovation, and design thinking through
+                  hands-on construction
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-center pt-0">
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Explore how engineering fosters creativity, problem-solving,
+                  and design thinking through building activities.
+                </p>
+                <Link to="/engineering">
+                  <Button className="bg-gradient-to-r from-yellow-600 to-yellow-700 hover:from-yellow-700 hover:to-yellow-800 text-white rounded-full px-6 py-2 font-medium shadow-lg hover:shadow-xl transition-all duration-300">
+                    Engineering Curriculum
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://media.istockphoto.com/id/1399040809/photo/elementary-students-using-technology-at-school.jpg?s=612x612&w=0&k=20&c=9jAHKkESRPZKS4DILwFICFB_u7_gxcrr7h_rAC5A70k="
+                  alt="Technologies activities"
+                  width={400}
+                  height={300}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-cyan-600/20 to-transparent"></div>
+              </div>
+              <CardHeader className="text-center pb-4">
+                <div className="mx-auto w-16 h-16 bg-gradient-to-br from-cyan-100 to-cyan-200 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Laptop className="h-8 w-8 text-cyan-600" />
+                </div>
+                <CardTitle className="text-2xl text-gray-900">
+                  Technologies Curriculum
+                </CardTitle>
+                <CardDescription className="text-gray-600">
+                  Digital literacy, innovation, and creative expression through
+                  interactive tools
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-center pt-0">
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Discover how technology integrates with learning to foster
+                  digital literacy, innovation, and creative expression.
+                </p>
+                <Link to="/technologies">
+                  <Button className="bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-700 hover:to-cyan-800 text-white rounded-full px-6 py-2 font-medium shadow-lg hover:shadow-xl transition-all duration-300">
+                    Technologies Curriculum
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://media.istockphoto.com/id/874364808/photo/little-boy-and-girl-learn-to-calculate-numbers.jpg?s=612x612&w=0&k=20&c=foe2XvPpyrp-ODNeUkSYCkroxnfdOFdd-cYAPaGm6SI="
+                  alt="Mathematics and numeracy activities"
+                  width={400}
+                  height={300}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-indigo-600/20 to-transparent"></div>
+              </div>
+              <CardHeader className="text-center pb-4">
+                <div className="mx-auto w-16 h-16 bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Calculator className="h-8 w-8 text-indigo-600" />
+                </div>
+                <CardTitle className="text-2xl text-gray-900">
+                  Mathematics & Numeracy
+                </CardTitle>
+                <CardDescription className="text-gray-600">
+                  Logical thinking, problem-solving, and pattern recognition
+                  through mathematical play
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-center pt-0">
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Explore how mathematics and numeracy foster logical thinking,
+                  problem-solving, and pattern recognition through play.
+                </p>
+                <Link to="/mathematics-numeracy">
+                  <Button className="bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-700 hover:to-indigo-800 text-white rounded-full px-6 py-2 font-medium shadow-lg hover:shadow-xl transition-all duration-300">
+                    Mathematics & Numeracy
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://media.istockphoto.com/id/971350970/photo/young-school-girl-giving-a-presentation-in-class.jpg?s=612x612&w=0&k=20&c=7ZZNstgRLD6KWYD58Svo2swaYzRzaRM5oYPZJU0qFKc="
+                  alt="Humanities and social sciences activities"
+                  width={400}
+                  height={300}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-teal-600/20 to-transparent"></div>
+              </div>
+              <CardHeader className="text-center pb-4">
+                <div className="mx-auto w-16 h-16 bg-gradient-to-br from-teal-100 to-teal-200 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Globe className="h-8 w-8 text-teal-600" />
+                </div>
+                <CardTitle className="text-2xl text-gray-900">
+                  Humanities & Social Sciences
+                </CardTitle>
+                <CardDescription className="text-gray-600">
+                  Understanding of self, others, and the world through cultural
+                  and historical exploration
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-center pt-0">
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Discover how Humanities & Social Sciences foster understanding
+                  of self, others, and diverse cultures through exploration.
+                </p>
+                <Link to="/humanities-social-sciences">
+                  <Button className="bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800 text-white rounded-full px-6 py-2 font-medium shadow-lg hover:shadow-xl transition-all duration-300">
+                    Humanities & Social Sciences
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://media.istockphoto.com/id/968197584/photo/young-group-of-female-students-in-a-robotics-club-having-fun.jpg?s=612x612&w=0&k=20&c=XNTzJAjGRfhWESi3WeBkjD2_wjgzaYR4SmyTLwZbu8M="
+                  alt="Integrated curriculum activities"
+                  width={400}
+                  height={300}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-lime-600/20 to-transparent"></div>
+              </div>
+              <CardHeader className="text-center pb-4">
+                <div className="mx-auto w-16 h-16 bg-gradient-to-br from-lime-100 to-lime-200 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Puzzle className="h-8 w-8 text-lime-600" />
+                </div>
+                <CardTitle className="text-2xl text-gray-900">
+                  Integrated Curriculum
+                </CardTitle>
+                <CardDescription className="text-gray-600">
+                  Holistic development and interdisciplinary thinking through
+                  connected learning experiences
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-center pt-0">
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Explore how an integrated curriculum fosters holistic
+                  development and interdisciplinary thinking through connected
+                  experiences.
+                </p>
+                <Link to="/integrated-curriculum">
+                  <Button className="bg-gradient-to-r from-lime-600 to-lime-700 hover:from-lime-700 hover:to-lime-800 text-white rounded-full px-6 py-2 font-medium shadow-lg hover:shadow-xl transition-all duration-300">
+                    Integrated Curriculum
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+            {/* New Cards End Here */}
           </div>
         </div>
       </section>
