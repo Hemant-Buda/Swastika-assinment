@@ -17,7 +17,7 @@ import {
   FileText,
   Camera,
   Puzzle,
-  FileSliders
+  FileSliders,
 } from "lucide-react";
 import {
   Card,
@@ -380,7 +380,7 @@ export default function LanguageLiteracyPage() {
                 </p>
                 <div className="grid md:grid-cols-2 gap-6">
                   {/* //link */}
-                  <Link to="#" target="_blank" rel="noopener noreferrer">
+                  <Link to="https://go.screenpal.com/watch/cTjX6ln2n4J" target="_blank" rel="noopener noreferrer">
                     <div className="bg-gradient-to-br from-purple-50 to-white p-6 rounded-xl shadow-lg border border-purple-100 text-center hover:shadow-2xl transition">
                       <div className="w-16 h-16 bg-green-300 rounded-full flex items-center justify-center mx-auto mb-4">
                         <Camera className="h-8 w-8 text-greeen-600" />
@@ -389,12 +389,16 @@ export default function LanguageLiteracyPage() {
                         Video Recording 1
                       </h4>
                       <p className="text-gray-600 mb-2">
-                        Finger puppet song time (2-3)
+                      Poetry and performance ( 6-8 years)
                       </p>
                     </div>
                   </Link>
                   {/* //link */}
-                  <Link to="#" target="_blank" rel="noopener noreferrer">
+                  <Link
+                    to="https://go.screenpal.com/watch/cTjXQ8n2nwY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <div className="bg-gradient-to-br from-indigo-50 to-white p-6 rounded-xl shadow-lg border border-indigo-100  text-center hover:shadow-2xl transition">
                       <div className="w-16 h-16 bg-green-200 rounded-full flex items-center justify-center mx-auto mb-4">
                         <Camera className="h-8 w-8 text-green-600" />
@@ -403,7 +407,7 @@ export default function LanguageLiteracyPage() {
                         Video Recording 2
                       </h4>
                       <p className="text-gray-600 mb-2">
-                        Emotion masks drama (3-5 years)
+                        Word and Rhyme game (3-5 years)
                       </p>
                     </div>
                   </Link>

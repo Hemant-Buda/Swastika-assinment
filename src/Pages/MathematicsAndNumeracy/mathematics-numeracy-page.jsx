@@ -330,7 +330,11 @@ export default function MathematicsNumeracyPage() {
                 </p>
                 <div className="grid md:grid-cols-2 gap-6">
                   {/* //link */}
-                  <Link to="#" target="_blank" rel="noopener noreferrer">
+                  <Link
+                    to="https://go.screenpal.com/watch/cTjXlin2nRK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <div className="bg-gradient-to-br from-purple-50 to-white p-6 rounded-xl shadow-lg border border-purple-100 text-center hover:shadow-2xl transition">
                       <div className="w-16 h-16 bg-pink-300 rounded-full flex items-center justify-center mx-auto mb-4">
                         <Camera className="h-8 w-8 text-indigo-600" />
@@ -339,12 +343,16 @@ export default function MathematicsNumeracyPage() {
                         Video Recording 1
                       </h4>
                       <p className="text-gray-600 mb-2">
-                        Finger puppet song time (2-3)
+                        Counting Everyday objects (2-3 years)
                       </p>
                     </div>
                   </Link>
                   {/* //link */}
-                  <Link to="#" target="_blank" rel="noopener noreferrer">
+                  <Link
+                    to="https://go.screenpal.com/watch/cTjXl3n2eca"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <div className="bg-gradient-to-br from-indigo-50 to-white p-6 rounded-xl shadow-lg border border-indigo-100  text-center hover:shadow-2xl transition">
                       <div className="w-16 h-16 bg-pink-200 rounded-full flex items-center justify-center mx-auto mb-4">
                         <Camera className="h-8 w-8 text-indigo-600" />
@@ -353,7 +361,7 @@ export default function MathematicsNumeracyPage() {
                         Video Recording 2
                       </h4>
                       <p className="text-gray-600 mb-2">
-                        Emotion masks drama (3-5 years)
+                        Number songs with movements (0-2 years)
                       </p>
                     </div>
                   </Link>

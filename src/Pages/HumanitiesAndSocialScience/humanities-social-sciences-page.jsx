@@ -16,7 +16,7 @@ import {
   Calculator,
   Puzzle,
   FileText,
-  FileSliders ,
+  FileSliders,
   Camera,
 } from "lucide-react";
 import {
@@ -40,8 +40,8 @@ export default function HumanitiesSocialSciencesPage() {
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-sm font-medium text-teal-700 mb-6 shadow-sm">
-                <Star className="w-4 h-4 mr-2 text-yellow-500" /> Creative   Humanities & Social Science
-                Education
+                <Star className="w-4 h-4 mr-2 text-yellow-500" /> Creative
+                Humanities & Social Science Education
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 Humanities & Social{" "}
@@ -327,12 +327,16 @@ export default function HumanitiesSocialSciencesPage() {
                 <p className="text-gray-700 text-lg">
                   This section will include video recordings and timelines of
                   enacted learning experiences, demonstrating practical
-                  application of humanities social sciences activities across different
-                  age groups.
+                  application of humanities social sciences activities across
+                  different age groups.
                 </p>
                 <div className="grid md:grid-cols-2 gap-6">
                   {/* //link */}
-                  <Link to="#" target="_blank" rel="noopener noreferrer">
+                  <Link
+                    to="https://go.screenpal.com/watch/cTjXlkn2efG"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <div className="bg-gradient-to-br from-purple-50 to-white p-6 rounded-xl shadow-lg border border-purple-100 text-center hover:shadow-2xl transition">
                       <div className="w-16 h-16 bg-cyan-300 rounded-full flex items-center justify-center mx-auto mb-4">
                         <Camera className="h-8 w-8 text-teal-600" />
@@ -341,12 +345,12 @@ export default function HumanitiesSocialSciencesPage() {
                         Video Recording 1
                       </h4>
                       <p className="text-gray-600 mb-2">
-                        Finger puppet song time (2-3)
+                        Cultural storytelling(3-5 years)
                       </p>
                     </div>
                   </Link>
                   {/* //link */}
-                  <Link to="#" target="_blank" rel="noopener noreferrer">
+                  <Link to="https://go.screenpal.com/watch/cTjXl7n2eie" target="_blank" rel="noopener noreferrer">
                     <div className="bg-gradient-to-br from-indigo-50 to-white p-6 rounded-xl shadow-lg border border-indigo-100  text-center hover:shadow-2xl transition">
                       <div className="w-16 h-16 bg-cyan-200 rounded-full flex items-center justify-center mx-auto mb-4">
                         <Camera className="h-8 w-8 text-teal-600" />
@@ -355,7 +359,7 @@ export default function HumanitiesSocialSciencesPage() {
                         Video Recording 2
                       </h4>
                       <p className="text-gray-600 mb-2">
-                        Emotion masks drama (3-5 years)
+                      Community Helpers Role Play (2–3 Years)
                       </p>
                     </div>
                   </Link>
@@ -462,11 +466,11 @@ export default function HumanitiesSocialSciencesPage() {
                     <Puzzle className="h-4 w-4 mr-2" /> Integrated Curriculum
                   </Button>
                 </Link>
-                 <Link to="/reference">
-                                  <Button className="w-full justify-start bg-gradient-to-r from-orange-100 to-orange-200 text-orange-700 hover:from-orange-200 hover:to-orange-300 shadow-sm">
-                                    <FileSliders className="h-4 w-4 mr-2" /> References
-                                  </Button>
-                                </Link>
+                <Link to="/reference">
+                  <Button className="w-full justify-start bg-gradient-to-r from-orange-100 to-orange-200 text-orange-700 hover:from-orange-200 hover:to-orange-300 shadow-sm">
+                    <FileSliders className="h-4 w-4 mr-2" /> References
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           </div>
