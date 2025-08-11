@@ -14,6 +14,7 @@ import {
   Landmark,
   Combine,
   Construction,
+  FileSliders,
 } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
@@ -78,6 +79,12 @@ const Navbar = () => {
       path: "/integrated-curriculum",
       name: "Integrated Curriculum",
       icon: Combine,
+      activeColor: "text-purple-600",
+    },
+    {
+      path: "/reference",
+      name: "References",
+      icon: FileSliders,
       activeColor: "text-purple-600",
     },
   ];

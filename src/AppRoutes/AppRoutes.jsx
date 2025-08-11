@@ -10,6 +10,7 @@ import TechnologiesPage from "../Pages/Technologies/technologies-page";
 import MathematicsNumeracyPage from "../Pages/MathematicsAndNumeracy/mathematics-numeracy-page";
 import HumanitiesSocialSciencesPage from "../Pages/HumanitiesAndSocialScience/humanities-social-sciences-page";
 import IntegratedCurriculumPage from "../Pages/IntegratedCurriculum/integrated-curriculum-page";
+import ReferencesPage from "../Pages/Reference/Reference";
 
 export default function AppRoutes() {
   return (
@@ -34,6 +35,8 @@ export default function AppRoutes() {
         path="/integrated-curriculum"
         element={<IntegratedCurriculumPage />}
       />
+      <Route path="/reference" element={<ReferencesPage />} />
     </Routes>
+    
   );
 }

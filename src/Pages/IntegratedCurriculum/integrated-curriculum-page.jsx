@@ -17,6 +17,7 @@ import {
   Globe,
   FileText,
   Camera,
+  FileSliders,
 } from "lucide-react";
 import {
   Card,
@@ -466,6 +467,11 @@ export default function IntegratedCurriculumPage() {
                   <Button className="w-full justify-start bg-gradient-to-r from-teal-100 to-teal-200 text-teal-700 hover:from-teal-200 hover:to-teal-300 shadow-sm">
                     <Globe className="h-4 w-4 mr-2" /> Humanities & Social
                     Sciences
+                  </Button>
+                </Link>
+                <Link to="/reference">
+                  <Button className="w-full justify-start bg-gradient-to-r from-orange-100 to-orange-200 text-orange-700 hover:from-orange-200 hover:to-orange-300 shadow-sm">
+                    <FileSliders className="h-4 w-4 mr-2" /> References
                   </Button>
                 </Link>
               </CardContent>

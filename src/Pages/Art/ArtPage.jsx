@@ -15,6 +15,7 @@ import {
   Calculator,
   Globe,
   Puzzle,
+  FileSliders,
 } from "lucide-react";
 import Art from "../../assets/art.jpg";
 import {
@@ -443,6 +444,11 @@ export default function ArtPage() {
                 <Link to="/integrated-curriculum">
                   <Button className="w-full justify-start bg-gradient-to-r from-lime-100 to-lime-200 text-lime-700 hover:from-lime-200 hover:to-lime-300 shadow-sm">
                     <Puzzle className="h-4 w-4 mr-2" /> Integrated Curriculum
+                  </Button>
+                </Link>
+                <Link to="/reference">
+                  <Button className="w-full justify-start bg-gradient-to-r from-orange-100 to-orange-200 text-orange-700 hover:from-orange-200 hover:to-orange-300 shadow-sm">
+                    <FileSliders className="h-4 w-4 mr-2" /> References
                   </Button>
                 </Link>
               </CardContent>

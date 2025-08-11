@@ -15,6 +15,7 @@ import {
   FlaskConical,
   Construction,
   Laptop,
+  FileSliders
 } from "lucide-react";
 import Darama from "../../assets/drama.avif";
 import {
@@ -469,6 +470,11 @@ export default function DramaPuppetryPage() {
                     <Puzzle className="h-4 w-4 mr-2" /> Integrated Curriculum
                   </Button>
                 </Link>
+                 <Link to="/reference">
+                                  <Button className="w-full justify-start bg-gradient-to-r from-orange-100 to-orange-200 text-orange-700 hover:from-orange-200 hover:to-orange-300 shadow-sm">
+                                    <FileSliders className="h-4 w-4 mr-2" /> References
+                                  </Button>
+                                </Link>
               </CardContent>
             </Card>
           </div>

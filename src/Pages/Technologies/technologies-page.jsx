@@ -17,6 +17,7 @@ import {
   Puzzle,
   FileText,
   Camera,
+  FileSliders,
 } from "lucide-react";
 import {
   Card,
@@ -39,8 +40,8 @@ export default function TechnologiesPage() {
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-sm font-medium text-cyan-700 mb-6 shadow-sm">
-                <Star className="w-4 h-4 mr-2 text-yellow-500" /> Creative Technology
-                Education
+                <Star className="w-4 h-4 mr-2 text-yellow-500" /> Creative
+                Technology Education
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 Technologies in{" "}
@@ -325,8 +326,8 @@ export default function TechnologiesPage() {
                 <p className="text-gray-700 text-lg">
                   This section will include video recordings and timelines of
                   enacted learning experiences, demonstrating practical
-                  application of technologies activities across different
-                  age groups.
+                  application of technologies activities across different age
+                  groups.
                 </p>
                 <div className="grid md:grid-cols-2 gap-6">
                   {/* //link */}
@@ -457,6 +458,11 @@ export default function TechnologiesPage() {
                 <Link to="/integrated-curriculum">
                   <Button className="w-full justify-start bg-gradient-to-r from-lime-100 to-lime-200 text-lime-700 hover:from-lime-200 hover:to-lime-300 shadow-sm">
                     <Puzzle className="h-4 w-4 mr-2" /> Integrated Curriculum
+                  </Button>
+                </Link>
+                <Link to="/reference">
+                  <Button className="w-full justify-start bg-gradient-to-r from-orange-100 to-orange-200 text-orange-700 hover:from-orange-200 hover:to-orange-300 shadow-sm">
+                    <FileSliders className="h-4 w-4 mr-2" /> References
                   </Button>
                 </Link>
               </CardContent>
